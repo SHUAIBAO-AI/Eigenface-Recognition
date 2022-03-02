@@ -100,7 +100,9 @@ im=double(im); % Transfer the 'im' from 'unit8' to 'double'
 end
 
 Output:
-![image](https://github.com/STPChenFang/Eigenface-Recognition/blob/main/IMG_Eigenface%20recoginition/image0044.png)
+
+![image](https://github.com/STPChenFang/Eigenface-Recognition/blob/main/IMG_Eigenface%20recoginition/image004.png)
+
 Figure3 Face generation from its “weights”
 
 Task4: Recognizing an employee from his/her image.
