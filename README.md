@@ -105,14 +105,13 @@ Output:
 
 Figure3 Face generation from its “weights”
 
-Task4: Recognizing an employee from his/her image.
+Recognizing an employee from his/her image.
 Answer: 
 	After we got the ‘weights’ of ‘im’, in this task it’s a vector that contain 100 number which describe the weights of eigenfaces, and in our database employees_DB, every employee’s weights number also stored in this employees_DB, what we need to do is that we should find out the matched vector in employees_DB, which means ,we need to find the match vector in high dimension space.
 	To find the most match vector, we need to use Euclidean Distance between two vectors to determine whether the distance is 0 or not, so that we calculate each distance between  ‘weights’ of ‘im’ and each vector in employees_DB. What we found is 96, employee’s ID is 96.
 	Because in our calculation, ID 96 has the smallest Euclidean Distance, and in our confirmation, Figure3 also has the same image with original image.
 
 Code:
-%% Task4 Recognizing an employee from his/her image. 
 clear all;
 clc;
 load('C:\Users\Shuai.bao19\Documents\Lab3\data_for_labC.mat');%get data from data_for_labC.mat
@@ -142,10 +141,10 @@ end
     ID=employees_DB(ID_num).id; % Extract the id of macthed image
 end
 
-Task5: Discussion.
-Answer: 
-	As an appearance-based approach, eigenface recognition method has several advantages:
- 	1) Raw intensity data are used directly for learning and recognition without any significant low-level or mid-level processing; 
+Discussion.
+
+As an appearance-based approach, eigenface recognition method has several advantages:
+1) Raw intensity data are used directly for learning and recognition without any significant low-level or mid-level processing; 
 (2) No knowledge of geometry and reflectance of faces is required; 
 (3) Data compression is achieved by the low-dimensional subspace representation; 
 (4) Recognition is simple and efficient compared to other matching approaches.
